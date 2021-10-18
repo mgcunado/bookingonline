@@ -1,0 +1,289 @@
+.formatos { font-family:  Georgia, Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; padding: 0px 0px 0px 0px; letter-spacing: 1px; }
+
+.formatos p {
+	padding: 4px 15px 5px 25px;
+	font-size: 10px;
+	text-align: justify;
+	line-height: 15px;
+}
+
+.homepage {
+	padding: 3px;
+	font-size: 10px;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #C9F6C9;
+}
+
+.formatos b {
+	font-weight: bold;
+
+}
+
+.formatos h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #007722;
+	text-align: left;
+	padding: 15px 20px 15px 25px;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+q.formatos { background-color: #FFCCFF; }
+
+.formatos q { background-color: #FFCCCC; }
+.formatos q:before { content: no-open-quote; }
+.formatos q:after  { content: no-close-quote; }
+
+.formatos h2 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	padding: 2px 2px 2px 5px;
+	text-align: left;
+	background-color: #278AA7;
+	margin-top: 40px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+}
+
+.formatos h3 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	padding: 2px 2px 2px 5px;
+	text-align: center;
+	background-color: #278AA7;
+	margin-top: 40px;
+	margin-right: 15%;
+	margin-bottom: 10px;
+	margin-left: 15%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+}
+
+
+.titulo {
+	font-size: 25px;
+	font-weight: bolder;
+	color: #ffffff;
+	padding: 5px 0px 0px 0px;
+	text-align: center;
+	letter-spacing: 20px;
+}
+
+.subtitulo {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #ffcc99;
+	letter-spacing: 14px;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+
+.formatos h5 {
+	padding: 4px 25px 5px;
+	font-size: 12px;
+	text-align: left;
+	line-height: 20px;
+	color: 996600;
+	letter-spacing: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.direccion {
+	padding: 0px 0px 0px 0px;
+	font-size: 10px;
+	color: #ffddaa;
+	text-align: center;
+}
+
+.email {
+	padding: 0px 0px 0px 0px;
+	font-size: 10px;
+	color: #990000;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.pie_de_foto {
+	padding: 0px 0px 0px;
+	font-size: 10px;
+	color: #333333;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.link {
+	padding: 0px 0px 0px;
+	font-size: 12px;
+	color: #333333;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.menu {
+
+	padding: 4px 15px 5px 25px;
+	font-size: 10px;
+	text-align: center;
+	line-height: 15px;
+	color: #222222;
+	font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.menu_degustacion {
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+	font-style: oblique;
+	color: #444444;
+	text-align: center;
+	margin-bottom: 3px;
+	line-height: 24px;
+	font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.email2 {
+	padding: 0px 0px 0px 0px;
+	font-size: 10px;
+	color: #FFFF99;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	letter-spacing: 2px;
+}
+
+.formatos pre { font-size: 10px; color: #ffffff; padding: 4px 4px 4px 4px; text-align: left;}
+
+li { color: #000066; padding-top: 1em; }
+
+.formatos dl { padding: 5px 10px 7px 35px; text-align: justify;}
+
+.formatos dt { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #664400; padding-bottom: 10px; letter-spacing: 1px; font-style: normal; }
+
+.formatos dd {
+	color: #003366;
+	margin-left: 0px;
+	padding-bottom: 20px;
+	font-size: 10px;
+	line-height: 14px;
+	text-align: justify;
+}
+
+
+.formatos menu { padding: 0px 20px 25px 30px; }
+
+.formatos ol { padding: 0px 30px 25px; }
+
+
+.formatos li { color: #333333; margin-left: 0px; padding-bottom: 5px; font-size: 10px; 	text-align: justify;
+	line-height: 13px;}
+
+
+.formatos a {
+	font-weight: normal;
+	text-decoration: none;
+	padding-right: 30 px;
+	text-align: center;
+	padding-left: 5px;	
+	
+} 
+
+.registroempresa {
+	font-weight: normal;
+	text-decoration: bold;
+	padding-top: 30px;
+	text-align: center;
+	padding-left: 5px;
+	font-size: 85%;
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	color: #888888;
+}
+
+.blanco {
+	font-weight: normal;
+	text-decoration: none;
+	padding-right: 30 px;
+	text-align: center;
+	padding-left: 5px;
+	font-size: 85%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+.azul {
+	font-size: 12px;
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	color: #002255;
+	font-weight: bold
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+}
+
+.formatos .link { color: #ffffff; }
+
+.formatos .note { color: #003366; margin: 1em; }
+
+.formatos .note q { background-color: #0088ff; }
+.formatos .note q:before { content: no-open-quote; }
+.formatos .note q:after  { content: no-close-quote; }
+
+.formatos tt {
+	padding: 5px 0px;
+	font-size: 10px;
+	font-family: Geneva, Arial, Helvetica, san-serif;
+	color: #aaddFF;
+	text-align: center;
+}
+
+
+.titulo2grande { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #663300; text-align: left; padding-bottom: 3px; padding-top: 3px; letter-spacing: 3px; padding-left: 15px; font-weight: bold}
+
+.verdana10dch { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #663300; padding-bottom: 6px; padding-top: 3px; letter-spacing: 1px; text-align: right; padding-right: 5px}
+
+.verdana10izq { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #003366; padding-bottom: 1px; padding-top: 1px; letter-spacing: 1px; text-align: left; padding-left: 10px}
+
+.verdana10centro { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #663300; padding-bottom: 2px; padding-top: 2px; letter-spacing: 1px; text-align: center}
+
+.verdana10centrodatos { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #003366; padding-bottom: 6px; padding-top: 3px; letter-spacing: 1px; text-align: center ; font-weight: bold}
+
+.escapadas {
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+	color: #444444;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 100px;
+	font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.escapadas2 {
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+	color: #444444;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.etxezahar {
+	font-family: Arial, Helvetica, Verdana, Georgia,  sans-serif;
+	font-size: 85%;
+	color: #ffcc99;
+	font-weight: italic;
+	letter-spacing: 0px;
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
