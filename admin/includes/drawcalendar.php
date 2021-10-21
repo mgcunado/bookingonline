@@ -3,20 +3,15 @@
         <td colspan=7>
             <table border=0 align=center width="100%" cellpadding=0 cellspacing=0>
                 <tr>
-                    <?php if ($id != '') {
-                        $index_php = "index.php?option=com_content&view=article&id=$id&Itemid=$Itemid&";
-                    } else {
-                        $index_php = "index.php?";
-                    } ?>
-                    <td width="13%" align=center><a href="<?php echo $index_php; ?>mes=<?php echo $mes; ?>&ano=<?php echo $AnoAnteriorAno; ?>"><img src=images/previous_year.gif border=0></a></td>
+                    <td width="13%" align=center><a href="index.php?mes=<?php echo $mes; ?>&ano=<?php echo $AnoAnteriorAno; ?>"><img src=images/previous_year.gif border=0></a></td>
 
-                    <td width="12%" align=center><a href="<?php echo $index_php; ?>mes=<?php echo $MesAnterior; ?>&ano=<?php echo $AnoAnterior; ?>"><img src=images/previous.gif border=0></a></td>
+                    <td width="12%" align=center><a href="index.php?mes=<?php echo $MesAnterior; ?>&ano=<?php echo $AnoAnterior; ?>"><img src=images/previous.gif border=0></a></td>
 
                     <td class="cal_mesano2" width="50%" colspan="1" align="center" nowrap> <?php echo $ARRMES[$mes] . " - " . $ano; ?></td>
 
-                    <td width="12%" align=center><a href="<?php echo $index_php; ?>mes=<?php echo $MesSiguiente; ?>&ano=<?php echo $AnoSiguiente; ?>"><img src=images/next.gif border=0></a></td>
+                    <td width="12%" align=center><a href="index.php?mes=<?php echo $MesSiguiente; ?>&ano=<?php echo $AnoSiguiente; ?>"><img src=images/next.gif border=0></a></td>
 
-                    <td width="13%" align=center><a href="<?php echo $index_php; ?>mes=<?php echo $mes; ?>&ano=<?php echo $AnoSiguienteAno; ?>"><img src=images/next_year.gif border=0></a></td>
+                    <td width="13%" align=center><a href="index.php?mes=<?php echo $mes; ?>&ano=<?php echo $AnoSiguienteAno; ?>"><img src=images/next_year.gif border=0></a></td>
 
                 </tr>
             </table>

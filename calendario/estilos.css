@@ -263,9 +263,9 @@ a.calencerrar span{
 
 
 /***************/
- 
 
-.dispohabitaciones th  
+
+.dispohabitaciones th
 {
 	/*background:#d5ad71;*/
 	color:#036;
@@ -279,79 +279,82 @@ a.calencerrar span{
 	padding: 4px 2px 3px 2px;
 }
 
-.dispohabitaciones td  
+.dispohabitaciones td, div.dispohabitaciones
 {
 	background:#86c6ff;
-	/*color:#333;*/
+    width: 80%;
+    margin: auto;
+	color:#333;
 	font-family: Verdana, Arial, Helvetica;
-	/*text-align: left;*/
 	font-size: 80%;
 	font-weight: none;
 	border-right: 1px solid #71add5;
 	border-bottom: 1px solid #71add5;
-	padding: 4px 2px 3px 10px;
+	padding: 10px;
 }
+
 
 /*************/
 BODY {
 	background: url(../images/fondo2.gif) repeat;
-} 
+}
 #disponibilidad {
-		position: absolute;
-		/*nos posicionamos en el centro del navegador*/
-		top:50px;
+		position: relative;
+		top:30px;
 		bottom:20px;
-		left:10%;
-		/*determinamos una anchura*/
-		width:80%;
-		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
-		/*margin-left:-200px;*/
-		/*determinamos una altura*/
-		/*height:300px;*/
-		/*indicamos que el margen superior, es la mitad de la altura*/
-		/*margin-top:-150px;*/
+		/* left:10%; */
+		width:85%;
+        margin: 0 auto 50px auto;
 		border:1px solid #aaa;
 		padding:5px;
 		text-align: left;
 		background-color: #fff;
-	 }
-
-.disponibilidad1 {
-	padding: 6px 10px 6px 10px;
-	text-align: left;
-	background-color: #dab0ed;
-	border:1px solid #c978ef;
-	}
-
-.dispo1td1 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 90%;
-	padding-bottom: 0px; 
-	margin-bottom: 0px; 
-	color: #333;
-	font-weight:bold;
 }
 
-.dispo1td2 {
-	padding-bottom: 0px; 
-	margin-bottom: 0px; 
+#main-box {
+  width: 75%;
+  margin: auto;
+  border: 1px solid black;
+  display:flex;
+  background-color: #dab0ed;
+}
+
+.box-test {
+  margin:auto;
+  padding: 10px;
+}
+
+#lightpurple {
+  background-color: #dab0ed;
+}
+
+.menuprincipal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	color: #444;
+	padding-bottom: 10px;
+	padding-top: 4px;
+	text-align: right;
+	padding-left: 3px;
+    /* padding-right: 15%; */
 }
 
 .instrucciones {
 		font-family: Georgia, Helvetica, Verdana, Arial;
-		text-align: left;	
+		text-align: left;
 		font-size: 80%;
 		border:1px dashed #555;
 		padding:5px 20px 5px 20px;
 		background-color: #ccc;
 		letter-spacing: 0.1em;
 		font-weight:italic;
+        margin: 20px 10% 40px 10%;
 }
 
 .formul {
 	padding: 6px 10px 6px 10px;
 	font-family: Georgia, Helvetica, Verdana, Arial;
-	text-align: left;	
+	text-align: left;
 	font-size: 90%;
 	color: #fff;
 	background-color: #c978ef;
@@ -362,7 +365,7 @@ BODY {
 .formul2 {
 	padding: 6px 10px 6px 10px;
 	font-family: Palatino, Times, Georgia, Helvetica, Verdana, Arial, serif;
-	text-align: left;	
+	text-align: left;
 	font-size: 95%;
 	letter-spacing: 0px;
 	color: #222;
@@ -374,7 +377,7 @@ BODY {
 .formul3 {
 	padding: 6px 10px 6px 10px;
 	font-family: Palatino, Times, Georgia, Helvetica, Verdana, Arial, serif;
-	text-align: left;	
+	text-align: left;
 	font-size: 95%;
 	letter-spacing: 0px;
 	color: #222;
@@ -385,7 +388,7 @@ BODY {
 .formul4 {
 	padding: 6px 10px 6px 10px;
 	font-family: Palatino, Times, Georgia, Helvetica, Verdana, Arial, serif;
-	text-align: left;	
+	text-align: left;
 	font-size: 95%;
 	letter-spacing: 0px;
 	color: #222;
@@ -403,11 +406,11 @@ BODY {
 .creditcard {
 	font-weight:bold;
 	font-size: 100%;
-	padding-bottom:10px	
+	padding-bottom:10px
 	}
 
 .formulespace {
-	padding-bottom:10px	
+	padding-bottom:10px
 	}
 
 .calh1 {
@@ -434,13 +437,14 @@ h1 {
 .habsdisponibles {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 90%;
-	padding-bottom: 0px; 
-	margin-bottom: 0px; 
+	padding-bottom: 0px;
+	margin: 0 auto 20px auto;
 	color: #333;
 	font-weight:none;
+    width: 80%;
 }
 
- 
+
 
 .blanco {
 	font-weight: normal;

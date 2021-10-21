@@ -214,13 +214,10 @@ if (mysqli_num_rows($rescargohab) != 0 && $t != 0 && $estanciamintotal != 0 && $
         </tfoot>
     </table><br /><?php
                     /*0*/ } else {  ?>
-    <table class="dispohabitaciones" align="center" border="0" cellspacing="0" bgcolor="" width="80%">
-        <tr>
-            <td style="color: #036; text-align: left; font-size: 80%; font-weight: none; padding:30px 30px 30px 30px">
-                <div>No existen Habitaciones disponibles para el periodo seleccionado. Disculpen las molestias.</div>
-            </td>
-        </tr>
-    </table><br />
+    <div class="dispohabitaciones" align="center" width="80%">
+        No existen Habitaciones disponibles para el periodo seleccionado. Disculpen las molestias.
+    </div><br />
+
 <?php  }
                 /*if ($desayunoincluido=='yes'){?> <input type="hidden" name="desayunoincluido" value="yes"><?php }*/
                 /****FIN del bucle de cargado de habitaciones***************/

@@ -61,13 +61,12 @@ for ($i = 0; $i < ($FSmt - $FLmt) / 86400; $i++) {
         $qryupdhab = "update habitaciones set $estanminupd  where fecha = '$fechaBuscada'";
         $resupdhab = $conexion->query($qryupdhab);
     } else { ?>
-        <table class="dispohabitaciones" align="center" border="0" cellspacing="0" bgcolor="" width="80%">
-            <tr>
-                <td style="color: #630; text-align: left; font-size: 80%; font-weight: none; padding:30px 30px 30px 30px">
-                    <div><span style="font-size:140%; font-weight:bold;">Atención:</span> Para poder introducir restricciones de estancia mínima en unas fechas concretas se han de cargar las habitaciones previamente con las variables generales en dichas fechas. Disculpe las molestias.<br /></div>
-                </td>
-            </tr>
-        </table><br />
+        <div class="dispohabitaciones">
+            <div style="color: #630; text-align: left; font-size: 80%; font-weight: none; padding:30px 30px 30px 30px">
+                <span style="font-size:140%; font-weight:bold;">Atención:</span> Para poder introducir restricciones de estancia mínima en unas fechas concretas se han de cargar las habitaciones previamente con las variables generales en dichas fechas. Disculpe las molestias.<br />
+            </div>
+        </div>
+
 <?php return;
     }
 }

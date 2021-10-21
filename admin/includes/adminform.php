@@ -5,27 +5,23 @@
     if ($mesllegada != '') $mess = $mesllegada;
     //////////////////////////////////////
     ?>
+    <div id="main-box">
+        <div id="lightpurple" class="box-test">Fecha de llegada:<br />
+            <input type="text" name="fechallegada" id="elemento1" onclick="check_fechaentrada(this.form)" class="campofecha" size="10" value="">
+        </div>
+        <div id="lightpurple" class="box-test">Fecha de salida:<br />
+            <input type="text" name="fechasalida" id="elemento2" onclick="check_fechasalida(this.form)" class="campofecha2" size="10">
+        </div>
+    </div>
 
-    <table align="center" border="0" cellspacing="0" bgcolor="" width="60%">
-
-        <tr>
-            <td class="disponibilidad1" width="50%">Fecha de llegada</td>
-            <td class="disponibilidad1" width="50%">Fecha de salida</td>
-        </tr>
-        <tr>
-            <td class="disponibilidad1" width="50%"><input type="text" name="fechallegada" id="elemento1" onclick="check_fechaentrada(this.form)" class="campofecha" size="10" value=""></td>
-            <td class="disponibilidad1" width="50%"><input type="text" name="fechasalida" id="elemento2" onclick="check_fechasalida(this.form)" class="campofecha2" size="10"></td>
-        </tr>
-    </table>
-    <br /><br />
     <table align="center" border="0" cellspacing="0" bgcolor="" width="95%">
 
         <!---BLOQUE1: DISPONIBILIDAD-->
         <tr>
             <td width="3%"><input type="radio" name="tarea" value="dispo" onClick="habilita1(this.form)"></td>
-            <td class="disponibilidad1" width="15%">Disponibilidad:</td>
+            <td class="" width="15%">Disponibilidad:</td>
             <td width="42%">
-                <select class="disponibilidad1" name="estado_ocupacion" disabled="disabled">
+                <select class="" name="estado_ocupacion" disabled="disabled">
                     <option value="" selected>--Seleccione una opción--</option>
                     <option value="1" onClick="habilitaTodas(this.form)">Ocupar Todas las habitaciones (CERRAR DÍAS)</option>
                     <?php
@@ -52,7 +48,7 @@
             </td>
 
             <td colspan=2 width="40%">
-                <select class="disponibilidad1" name="num_habitaciones" disabled="disabled">
+                <select class="" name="num_habitaciones" disabled="disabled">
                     <option value="" selected>--¿Cuantas habitaciones?--</option>
                     <option value="all">Todas las habitaciones</option>
                     <option value="0">Ninguna</option>
@@ -79,7 +75,7 @@
         <!---BLOQUE2: MODIFICAR TARIFAS-->
         <tr>
             <td width="3%" valign="top"><input type="radio" name="tarea" value="modiftarifa" onClick="habilita2(this.form)"></td>
-            <td class="disponibilidad1" width="15%" valign="top">Modificar Tarifas:</td>
+            <td class="" width="15%" valign="top">Modificar Tarifas:</td>
             <td colspan=2 width="63%"></td>
             <td width="30%">Incluir Desayuno en la Tarifa</td>
 
@@ -123,7 +119,7 @@
         <!---BLOQUE3: RESTRICCIÓN DE ESTANCIA MÍNIMA-->
         <tr>
             <td width="3%" width="15%" valign="top"><input type="radio" name="tarea" value="estanciaminima" onClick="habilita3(this.form)"></td>
-            <td class="disponibilidad1" width="15%" valign="top">Estancia mínima:</td>
+            <td class="" width="15%" valign="top">Estancia mínima:</td>
             <td width="42%">
 
                 <?php
@@ -137,7 +133,7 @@
                 ?>
             <td colspan=2 width="40%">
                 <?php for ($i = 0; $i < $n; $i++) { ?>
-                    <select class="disponibilidad1" name="estanmin<?php echo ($i + 1); ?>" disabled="disabled">
+                    <select class="" name="estanmin<?php echo ($i + 1); ?>" disabled="disabled">
                         <option value="" selected>--Seleccione una opción--</option>
                         <option value="2">2 noches</option>
                         <option value="3">3 noches</option>

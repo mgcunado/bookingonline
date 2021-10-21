@@ -6,10 +6,8 @@
     include('includes/cargavariablesgetpost.php'); //nota: no funciona con PHP74
     include('includes/conexion.php');
     include('includes/variablesgenerales.php');
-    /* include('../Connections/conexion.php'); */
 
     $qrytipohab = "select * from tipohabitaciones";
-    //$restipohab = mysqli_query($qrytipohab, $conexion);//nota: no funciona en PHP7.4
     $restipohab = $conexion->query($qrytipohab);
     //$n=mysqli_num_rows($restipohab);
     $rowrestipohab = $restipohab->fetch_assoc(); //la utilizaremos en includes/cargarhabitaciones.php
@@ -34,27 +32,27 @@
     <div id="disponibilidad">
         <h1>Reservas on-line</h1>
 
+        <div class="menuprincipal" width=90% align=center>
+            <spam style="padding-right:15%;" width=100%><a href="admin/index.php">Administración de Reservas on-line</a></spam>
+        </div>
+
+
         <?php
         if ($fechallegada == '' && $fechallegada2 == '' && $creditcard == '') { ?>
-            <table class="instrucciones" width="80%" align="center">
-                <tr>
-                    <td>Seleccione Fecha de llegada y Fecha de salida y haga click sobre el bot&oacute;n "Ver Disponibilidad".<br />Los d&iacute;as sobre el Calendario de Disponibilidad con fondo rojo significa que no hay habitaciones disponibles.</td>
-                </tr>
-            </table>
+
+            <div class="instrucciones">
+                <td>Seleccione Fecha de llegada y Fecha de salida y haga click sobre el bot&oacute;n "Ver Disponibilidad".<br />Los d&iacute;as sobre el Calendario de Disponibilidad con fondo rojo significa que no hay habitaciones disponibles.</td>
+            </div>
 
         <?php } else if ($fechallegada != '') { ?>
-            <table class="instrucciones" width="80%" align="center">
-                <tr>
-                    <td>Seleccione ahora la habitaci&oacute;n o habitaciones que le interese reservar.<br />Incluya si lo desea el número de desayunos por habitación seleccionada.<br />Haga click sobre el bot&oacute;n "Reserva ahora".</td>
-                </tr>
-            </table>
+            <div class="instrucciones">
+                Seleccione ahora la habitaci&oacute;n o habitaciones que le interese reservar.<br />Incluya si lo desea el número de desayunos por habitación seleccionada.<br />Haga click sobre el bot&oacute;n "Reserva ahora".
+            </div>
 
         <?php } else if ($fechallegada2 != '') { ?>
-            <table class="instrucciones" width="80%" align="center">
-                <tr>
-                    <td>Rellene el formulario de reserva con sus datos. Los campos obligatorios est&aacute;n marcados con un item rojo.<br /><br />No se admite American Express.</td>
-                </tr>
-            </table>
+            <div class="instrucciones">
+                Rellene el formulario de reserva con sus datos. Los campos obligatorios est&aacute;n marcados con un item rojo.<br /><br />No se admite American Express.
+            </div>
         <?php }
 
         require_once('includes/datesfromform.php');

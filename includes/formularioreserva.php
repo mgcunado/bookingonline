@@ -268,13 +268,11 @@
 
     <!---------Tabla Tu reserva------------>
     <div width="80%" id="formulario">
-        <table width="100%" align="center" class="formul">
-            <tr>
-                <td colspan=4>
-                    <div id="concepto02">Tu reserva</div>
-                </td>
-            </tr>
-        </table>
+
+        <div id="concepto02" width="100%" align="center" class="formul">
+            Tu reserva
+        </div>
+
 
         <?php
         if ($fechallegada2 != '') {
@@ -350,15 +348,6 @@
         $prixdesayu4 != '' ? $preciototal += $prixdesayu4 * $desayu4 * $numhab4 : $preciototal = $preciototal;
 
 
-        /*
-$precioiva = $preciototal*($iva/100);
-$precioiva = number_format($precioiva, 2, ",", ".");
-
-$preciosiniva = $preciototal*((100 - $iva)/100);
-$preciosiniva = number_format($preciosiniva, 2, ",", ".");
-
-$preciototal = number_format($preciototal, 2, ",", ".");
-*/
 
         $preciosiniva = $preciototal / (1 + ($iva / 100));
         $preciosiniva = number_format($preciosiniva, 2, ",", ".");
@@ -402,11 +391,11 @@ $preciototal = number_format($preciototal, 2, ",", ".");
     <br /><br />
 
     <div width="80%" id="formulario">
-        <table width="100%" align="center" class="formul">
-            <tr>
-                <td>Formulario de Reserva</td>
-            </tr>
-        </table>
+
+        <div width="100%" align="center" class="formul">
+            Formulario de Reserva
+        </div>
+
         <table class="formul3" align="center" cellpadding=0 cellspacing="5px" bgcolor="" width="100%">
             <tr>
                 <td width="3%"><img class="check" src="images/check.gif" alt="" width="16px" align="" /></td>

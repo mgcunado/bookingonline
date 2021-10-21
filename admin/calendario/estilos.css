@@ -227,6 +227,69 @@ a.calencerrar span{
 	margin: 0px;
 }
 
+.llegadasalida {
+  margin: 0 auto 90px auto;
+  width: 40%;
+  padding: 10px;
+}
+
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 120%;
+	color: #007722;
+	text-align: left;
+	padding: 15px 20px 15px 25px;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+#disponibilidad {
+		position: relative;
+		top:20px;
+		bottom:20px;
+		/* left:10%; */
+		width:90%;
+        margin: 0 auto 50px auto;
+		border:1px solid #aaa;
+		padding:5px;
+		text-align: left;
+		background-color: #fff;
+}
+
+#admin-menu {
+  width: 99%;
+  margin: 10px auto 30px auto;
+  /* border: 1px solid black; */
+  display:flex;
+  /* background-color: #dab0ed; */
+}
+
+.menu-test {
+  margin:auto;
+  padding: 10px;
+}
+
+#lightwhite {
+  /* background-color: #dab0ed; */
+}
+
+#main-box {
+  width: 75%;
+  margin: 10px auto 30px auto;
+  border: 1px solid black;
+  display:flex;
+  background-color: #dab0ed;
+}
+
+.box-test {
+  margin:auto;
+  padding: 10px;
+}
+
+#lightpurple {
+  background-color: #dab0ed;
+}
+
 .disponibilidad2 {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 90%;
@@ -235,6 +298,7 @@ a.calencerrar span{
 	padding-top: 4px;
 	text-align: left;
 	padding-left: 3px }
+
 .menuprincipal {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 90%;
@@ -242,27 +306,29 @@ a.calencerrar span{
 	padding-bottom: 10px;
 	padding-top: 4px;
 	text-align: right;
-	padding-left: 3px
+	padding-left: 3px;
+    /* padding-right: 15%; */
 }
 
 .modifvg {
 	border: 1px solid #ddd;
 	background-color: #eee;
-} 
+}
 
 .instrucciones {
 		font-family: Georgia, Helvetica, Verdana, Arial;
-		text-align: left;	
+		text-align: left;
 		font-size: 80%;
 		border:1px dashed #555;
 		padding:5px 20px 5px 20px;
 		background-color: #ccc;
 		letter-spacing: 0.1em;
 		font-weight:italic;
+        margin: 20px 10% 40px 10%;
 }
 
 
-.dispohabitaciones th  
+.dispohabitaciones th
 {
 	/*background:#d5ad71;*/
 	color:#630;
@@ -276,7 +342,19 @@ a.calencerrar span{
 	padding: 4px 2px 3px 2px;
 }
 
-.dispohabitaciones td  
+.dispohabitaciones div
+{
+	background:#86c6ff;
+	color:#333;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 80%;
+	font-weight: none;
+	border-right: 1px solid #71add5;
+	border-bottom: 1px solid #71add5;
+	padding: 4px 2px 3px 10px;
+	margin: 25px 50px 50px 25px;
+}
+.dispohabitaciones td
 {
 	background:#ffc686;
 	/*color:#333;*/

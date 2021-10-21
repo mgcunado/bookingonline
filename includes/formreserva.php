@@ -33,35 +33,29 @@
         <input type="hidden" name="subtitulo" value="<?php echo $subtitulo; ?>">
         <input type="hidden" name="cabezera" value="<?php echo $cabezera; ?>">
 
-        <table align="center" border="0" cellspacing="0" bgcolor="" width="80%">
-            <tr>
-                <td>
-                    <div class="habsdisponibles">Habitaciones disponibles desde el <?php echo $dsllegada . " " . $diallegada . " de " . $MESCOMPLETO[$mesllegada] . " " . $aniollegada; ?>, hasta el <?php echo $dssalida . " " . $diasalida . " de " . $MESCOMPLETO[$messalida] . " " . $aniosalida; ?>, para <?php echo $numNoches . " " . $noches . "."; ?><br />(<a href="index.php">Modificar fechas</a>)</div>
-                </td>
-            </tr>
-        </table><br /><?php
-                    }
+        <div class="habsdisponibles">Habitaciones disponibles desde el <?php echo $dsllegada . " " . $diallegada . " de " . $MESCOMPLETO[$mesllegada] . " " . $aniollegada; ?>, hasta el <?php echo $dssalida . " " . $diasalida . " de " . $MESCOMPLETO[$messalida] . " " . $aniosalida; ?>, para <?php echo $numNoches . " " . $noches . "."; ?><br />(<a href="index.php">Modificar fechas</a>)</div>
+    <?php
+    }
 
-                    if (($fechallegada == '' || $modiffechas == 'yes') && ($fechallegada2 == '' && $autorizacion == '')) { ?>
-        <table class="disponibilidad1" align="center" border="0" cellspacing="0" bgcolor="" width="60%">
+    if (($fechallegada == '' || $modiffechas == 'yes') && ($fechallegada2 == '' && $autorizacion == '')) { ?>
 
-            <tr>
-                <td class="dispo1td1" width="40%">Fecha de llegada:</td>
-                <td class="dispo1td1" width="40%">Fecha de salida:</td>
-                <td rowspan=2 style="vertical-align: bottom"><input type="button" value="Ver Disponibilidad" class="enviar" onclick="valida_envia1(this.form)"></td>
-            </tr>
+        <div id="main-box">
+            <div id="lightpurple" class="box-test">Fecha de llegada:<br />
+                <input type="text" name="fechallegada" id="elemento1" onclick="check_fechaentrada(this.form)" class="campofecha" size="10" value="">
+            </div>
 
+            <div id="lightpurple" class="box-test">Fecha de salida:<br />
+                <input type="text" name="fechasalida" id="elemento2" onclick="check_fechasalida(this.form)" class="campofecha2" size="10">
+            </div>
 
-            <tr>
-                <td class="dispo1td2" width="40%"><input type="text" name="fechallegada" id="elemento1" onclick="check_fechaentrada(this.form)" class="campofecha" size="10" value=""></td>
-                <td class="dispo1td2" width="40%"><input type="text" name="fechasalida" id="elemento2" onclick="check_fechasalida(this.form)" class="campofecha2" size="10"></td>
-            </tr>
-        </table>
+            <div id="lightpurple" class="box-test"><br />
+                <input type="button" value="Ver Disponibilidad" class="enviar" onclick="valida_envia1(this.form)">
+            </div>
 
-        <br /><br />
+        </div>
 
     <?php
-                    } ?>
+    } ?>
 
     <?php if ($fechallegada != '') {
         include('includes/cargarhabitaciones.php');

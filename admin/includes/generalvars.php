@@ -3,27 +3,22 @@
 if ($tarea == 'modiftarifastandart') {
     include('includes/cargartarifastandart.php');
 }
-
 ?>
-<table class="menuprincipal" width=90% align=center>
-    <tr>
-        <td width=100%><a href="index.php">Administración de Reservas on-line</a></td>
-    </tr>
-</table>
-<!----------CARGAR O MODIFICAR LAS VARIABLES GENERALES------>
+<div class="menuprincipal" width=90% align=center>
+    <spam style="padding-right:15%;" width=100%><a href="index.php">Administración de Reservas on-line</a></spam>
+</div>
 
+
+<!----------CARGAR O MODIFICAR LAS VARIABLES GENERALES------>
 
 <form method="post" action="index.php">
     <input type="hidden" name="tarifasestandar" value="yes">
-    <table class="instrucciones" align="center" border="0" cellspacing="0" bgcolor="" width="80%">
-        <tr>
-            <td>Introduzca las variables generales que vaya a utilizar para <b>CARGAR DÍAS</b><br />(Administración de Reservas on-line =>Disponibilidad => Librar Todas las habitaciones (CARGAR DÍAS) ).<br />Los días serán cargados con las variables generales existentes que haya introducido.</td>
-        </tr>
-    </table>
-    <br /><br />
+    <div class="instrucciones">
+        Introduzca las variables generales que vaya a utilizar para <b>CARGAR DÍAS</b><br />(Administración de Reservas on-line =>Disponibilidad => Librar Todas las habitaciones (CARGAR DÍAS) ).<br />Los días serán cargados con las variables generales existentes que haya introducido.
+    </div>
+
+
     <table align="center" border="0" cellspacing="0" bgcolor="" width="80%">
-
-
 
         <!---BLOQUE4: MODIFICAR TARIFAS STANDART-->
         <?php
@@ -36,7 +31,7 @@ if ($tarea == 'modiftarifastandart') {
         $DefvariablestableVG = array('Iva(%)', 'Núm. Total Habitación individual', 'Núm. Total Habitación doble', 'Núm. Total Habitación doble supl', 'Núm. Total Habitación familiar', 'PVP Habitación individual(€)', 'PVP Habitación doble(€)', 'PVP Habitación doble supl(€)', 'PVP Habitación familiar(€)', 'PVP Desayuno(€)'); ?>
         <tr class="modifvg">
             <td width="5%" valign="top" style="padding: 10px"><input type="radio" name="tarea" value="modiftarifastandart" onClick="habilita4(this.form)"></td>
-            <td class="disponibilidad1" width="25%" valign="top" style="padding: 10px">Modificar Variables Generales:<br />
+            <td class="" width="25%" valign="top" style="padding: 10px">Modificar Variables Generales:<br />
                 <div style="color:#FF0000; font-size:85%"></div>
             </td>
             <td width="40%" style="padding: 10px">
@@ -62,7 +57,4 @@ if ($tarea == 'modiftarifastandart') {
         </tr>
     </table>
 </form>
-
-
-
 <!----------FIN DE CARGAR O MODIFICAR LAS VARIABLES GENERALES------>
